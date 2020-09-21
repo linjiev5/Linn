@@ -1,0 +1,36 @@
+package lin;
+
+public class Toi_07 {
+
+	public static void main(String[] args) {
+		// TODO 自動生成されたメソッド・スタブ
+//		質問７︓配列を昇順でソートする（java.util等メソッド利⽤禁⽌）。
+		int[] array = new int[] { 5, 800, 7, 2, 165, 484 };
+		System.out.println("元の配列は");
+		hyouJi(array);
+		syouJyon(array);
+		System.out.println();
+		System.out.println("昇順の配列は");
+		hyouJi(array);
+	}
+
+	public static void hyouJi(int[] array) {
+		for (int i = 0; i < array.length; i++) {
+
+			System.out.print(array[i] + " ");
+		}
+	}
+
+	public static void syouJyon(int[] array) {
+		for (int x = 0; x < array.length - 1; x++) {
+			for (int y = x + 1; y < array.length; y++) {
+				if (array[x] > array[y]) {
+					int temp = array[x];
+					array[x] = array[y];
+					array[y] = temp;
+				}
+			}
+		}
+
+	}
+}
