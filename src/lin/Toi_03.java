@@ -1,5 +1,9 @@
 package lin;
-
+/**
+ *
+ * @author linjie
+ *
+ */
 public class Toi_03 {
 
 	public static void main(String[] args) {
@@ -15,14 +19,22 @@ public class Toi_03 {
 		int heiKin = heiKin(array);
 		System.out.println("配列の平均値は" + heiKin);
 	}
-
+/**
+ *
+ * @param array 平均値を計算するメソッドを作る
+ * @return　平均値
+ */
 	public static int heiKin(int[] array) {
 		int sum = getSum(array);
 		getSum(array);
 		int heiKin = sum / array.length;
 		return heiKin;
 	}
-
+/**
+ *
+ * @param array　足し算ができるメソッドを作る
+ * @return　和の値
+ */
 	public static int getSum(int[] array) {
 		int sum = 0;
 		for (int i = 1; i < array.length; i++) {
@@ -30,7 +42,11 @@ public class Toi_03 {
 		}
 		return array[sum];
 	}
-
+/**
+ *
+ * @param array　最小値を取るメソッドを作成する
+ * @return　最小値
+ */
 	public static int getMin(int[] array) {
 		int min = 0;
 		for (int y = 1; y < array.length; y++) {
@@ -40,7 +56,11 @@ public class Toi_03 {
 		}
 		return array[min];
 	}
-
+/**
+ *
+ * @param array　最大値を取るメソッドを作成する
+ * @return　最大値
+ */
 	public static int getMax(int[] array) {
 		int max = 0;
 		for (int x = 1; x < array.length; x++) {

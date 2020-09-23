@@ -1,5 +1,9 @@
 package lin;
-
+/**
+ *
+ * @author linjie
+ *
+ */
 public class Toi_02 {
 
 	public static void main(String[] args) {
