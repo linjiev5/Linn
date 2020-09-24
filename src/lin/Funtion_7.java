@@ -29,13 +29,17 @@ public class Funtion_7 {
 	 */
 	public static char[] trim(char[] input1) {
 		int startIndex = 0, length = 0;
+		//頭から入力した配列をアクセスする
 		for (int i = 0; i < input1.length; i++) {
+			//空白でなインデックスの値を取る
 			if (input1[i] != ' ') {
 				startIndex = i;
 				break;
 			}
 		}
+		//後ろから入力した配列をアクセスする
 		for (int j = input1.length - 1; j >= 0; j--) {
+			//空白でないインデックスの値をとる
 			if (input1[j] != ' ') {
 				length = j - 1;
 				break;

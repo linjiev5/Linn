@@ -23,7 +23,8 @@ public class Funtion_8 {
 
 	public static int[] bubbleSort(int[] sort1) {
 		for (int x = 0; x <= sort1.length; x++) {
-			for (int y = x+1; y <= sort1.length - 1; y++) {
+			for (int y = x + 1; y <= sort1.length - 1; y++) {
+				//より小さい値を記録する
 				if (sort1[x] > sort1[y]) {
 					int temp = sort1[x];
 					sort1[x] = sort1[y];
