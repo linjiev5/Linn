@@ -1,18 +1,9 @@
 package lin;
 
-/**
- *
-1. メソッド名:
+import java.util.Arrays;
 
-2. 引数１︓intの配列 left
-3. 引数２︓intの配列 right
-4. 戻り値︓intの配列
-5. 処理内容︓引数left と 引数right をマージして、新しい配列を作成して返却する。
-以下メソッドの実施例︓
-int[] left = new int[] {1, 2, 3, 4};
-int[] right = new int[] {5, 6, 7, 8};
-// メソッドを実施後
-int[] result = new int[] {1, 2, 3, 4, 5, 6, 7, 8};
+/**
+ *二つの配列を融合する
  * @author linjie
  *
  */
@@ -21,24 +12,27 @@ public class Funtion_61 {
 	public static void main(String[] args) {
 		int[] left = new int[] { 1, 2, 3, 4 };
 		int[] right = new int[] { 5, 6, 7, 8 };
-		int[] result1 = megerArray(left, right);
-		for (int element : result1) {
-			System.out.print(element + " ");
-		}
+		int[] result = megerArray(left, right);
+		System.out.println(Arrays.toString(result));
 	}
-
-	public static int[] megerArray(int[] l, int[] r) {
-		int length1 = l.length + r.length;
-		int[] result = new int[length1];
-		for (int x = 0; x < length1; x++) {
+/**
+ * 二つの配列を融合する
+ * @param leftArray
+ * @param rightArray
+ * @return	result
+ */
+	public static int[] megerArray(int[] leftArray, int[] rightArray) {
+		int length = leftArray.length + rightArray.length;
+		int[] result = new int[length];
+		for (int x = 0; x < length; x++) {
 			//leftの配列のインデックスを指定する
-			for (int a = 0; x < l.length; a++, x++) {
-				result[x] = l[a];
+			for (int a = 0; x < leftArray.length; a++, x++) {
+				result[x] = leftArray[a];
 			}
 			//rightの配列のインデックスを特定する
-			if (x > l.length - 1) {
-				for (int b = 0; b < r.length; x++, b++) {
-					result[x] = r[b];
+			if (x > leftArray.length - 1) {
+				for (int b = 0; b < rightArray.length; x++, b++) {
+					result[x] = rightArray[b];
 				}
 			}
 		}
