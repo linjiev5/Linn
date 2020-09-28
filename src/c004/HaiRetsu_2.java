@@ -1,11 +1,16 @@
 package c004;
 
+/**
+ *
+ * @author linjie
+ *
+ */
 public class HaiRetsu_2 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-//		問題５︓int[] array = new int[] {1, 3, 5, 7, 100, 0, 1}; 左の配列の最⼤値と最⼩桁値を
-//		System.out.println()。
+		//		問題５︓int[] array = new int[] {1, 3, 5, 7, 100, 0, 1}; 左の配列の最⼤値と最⼩桁値を
+		//		System.out.println()。
 		int[] array = new int[] { 1, 3, 5, 7, 100, 0, 1 };
 		int max = getMax(array);
 		System.out.println("最大値は" + max);
