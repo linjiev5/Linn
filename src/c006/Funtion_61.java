@@ -16,7 +16,7 @@ public class Funtion_61 {
 		System.out.println(Arrays.toString(result));
 	}
 /**
- * 二つの配列を融合する
+// * 二つの配列を融合する
  * @param leftArray
  * @param rightArray
  * @return	result

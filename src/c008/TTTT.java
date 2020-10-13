@@ -3,7 +3,6 @@ package c008;
 public class TTTT {
 
 	public static void main(String[] args) {
-		// TODO 自動生成されたメソッド・スタブ
 		//
 		int i = 10, j = 10;
 
