@@ -10,5 +10,5 @@ public class Test {
 		 String name = "jfkasdfhui";
 		 System.out.println(name.trim());
 	}
-Sy
+
 }

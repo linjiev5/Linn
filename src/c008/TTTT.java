@@ -10,15 +10,14 @@ public class TTTT {
 
 		Integer q = 500, w = 500;
 
-
 		System.out.println(i == j);
-//		⇒true
+		//		⇒true
 		System.out.println(i == m);
-//		⇒flase
+		//		⇒flase
 		System.out.println(m == n);
-//		⇒flase
+		//		⇒flase
 		System.out.println(q == w);
-//		⇒flase
+		//		⇒flase
 	}
 
 }
