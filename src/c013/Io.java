@@ -12,12 +12,12 @@ public class Io {
 			BufferedReader bufferedReader = new BufferedReader(reader);
 
 			String line;
-			int lowId=0;
+			int rowId=0;
 
 			while((line = bufferedReader.readLine())!=null) {
 
-				if(lowId==0) {
-					lowId++;
+				if(rowId==0) {
+					rowId++;
 				}else {
 					System.out.println(line);
 				}
