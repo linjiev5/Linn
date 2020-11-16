@@ -34,7 +34,7 @@ public class CopyTextTest_2 {
 
 		} catch (Exception e) {
 			//			System.out.println("読み取りませんでした");
-			throw new RuntimeException("読み取りませんでした");
+//			throw new RuntimeException("読み取りませんでした");
 		} finally {
 			if (fw != null)
 				try {
