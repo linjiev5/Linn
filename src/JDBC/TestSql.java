@@ -6,7 +6,7 @@ public class TestSql {
 		String url = "jdbc:postgresql://localHost:5432/Lin";
 		SqlDeal sd = new SqlDeal();
 //		sd.addData(url, "");
-		sd.search(url, "");
+
 	}
 
 }
