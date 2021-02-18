@@ -71,6 +71,7 @@ public class DBConnection {
                 }
             st.close();
             rs.close();
+            connection.close();
         } catch (SQLException ex) {
             ex.printStackTrace();
         }

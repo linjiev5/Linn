@@ -1,0 +1,62 @@
+
+
+ SpringBootの@xxxx
+ 	読み方------xxxxアノテーション
+
+
+
+	DB
+
+リポジトリ @Repository
+		1.A
+		2.B
+			R
+		@Query("select u from User u")
+		List<User> getUser();
+
+		Entity
+
+サービス @Service
+	R r
+	1.A
+	2.B
+		r.getUser();
+
+		VO
+		Object
+
+コントローラー @RestController   @Controller
+	1.A
+	2.B
+
+画面
+	static
+		1.css
+			body
+			con
+		2.image
+		3.js
+	template
+		1.html
+		user/html
+
+
+select * from xx
+where Lastname = "fag";
+
+
+@Query("select u from User u")
+List<User> findAllByCustomQueryAndStream();
+
+
+A a = new A();
+
+@Autowired
+A a;
+
+
+https://dev.classmethod.jp/articles/use_spring-boot-jpa-jpql/
+https://www.cnblogs.com/ldy-blogs/p/8550406.html
+https://blog.csdn.net/weixin_40753536/article/details/81285046
+
+

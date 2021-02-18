@@ -2,7 +2,7 @@ package stringDeal;
 
 import java.util.Date;
 
-public class time {
+public class Time {
 
 	public static void main(String[] args) {
 		Date d = new Date();

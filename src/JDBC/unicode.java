@@ -18,6 +18,7 @@ public class unicode {
 	 * @param original
 	 * @return
 	 */
+	@SuppressWarnings("unused")
 	private static String convertToUnicode(String original) {
 		StringBuilder sb = new StringBuilder();
 		for (int i = 0; i < original.length(); i++) {
