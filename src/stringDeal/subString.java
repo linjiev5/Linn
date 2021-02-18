@@ -13,6 +13,8 @@ public class SubString {
 		int p = Integer.parseInt(price);
 		System.out.println(p);
 		// 時間のフォーマットを設定する
+		Date  d = new Date();
+		System.out.println(d);
 		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss ");
 		String date = simpleDateFormat.format(new Date());
 		System.out.println(date);
